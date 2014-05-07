@@ -1,5 +1,5 @@
-logmerge: logmerge.o logger.o scanner.o
-	gcc -Wall -g -o logmerge logmerge.o logger.o scanner.o
+cLogMerge: logmerge.o logger.o scanner.o
+	gcc -Wall -g -o cLogMerge logmerge.o logger.o scanner.o
 logmerge.o: logmerge.c logger.c
 	gcc -Wall -c logmerge.c logger.c
 logger.o: logger.c scanner.c
